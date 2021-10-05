@@ -7,7 +7,7 @@ export default function Home() {
       bg-gradient-to-r from-blue-500 to-purple-500
       text-white
       `}>
-        <Layout titulo={"Cadastro Simples"} children={undefined}>
+        <Layout titulo="Cadastro Simples">
         <span>Conteudo</span>
         </Layout>      
     </div>
