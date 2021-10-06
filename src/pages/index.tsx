@@ -11,6 +11,10 @@ export default function Home() {
     new Cliente('Pedro', 54, '4')
   ]
 
+  function clienteSelecionado(cliente: Cliente) {
+
+  }
+
 
   return (
     <div className={`
@@ -19,7 +23,8 @@ export default function Home() {
       text-white
       `}>
         <Layout titulo="Cadastro Simples">
-          <Tabela clientes={clientes}></Tabela>
+          <Tabela clientes={clientes}
+            clienteSelecionado={clienteSelecionado}></Tabela>
         </Layout>      
     </div>
   )
