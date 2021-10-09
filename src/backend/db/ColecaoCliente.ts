@@ -34,7 +34,7 @@ async excluir(cliente: Cliente): Promise<void> {
 
 async obterTodos(): Promise<Cliente[]> {
     const query = await this.colecao().get()
-    return query.docs[Symbol].map(doc => doc.data())   
+    return query.docs.map(doc => doc.data())   
 }
 
 private colecao() {
